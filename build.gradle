@@ -1,0 +1,19 @@
+version '1.0-SNAPSHOT'
+
+apply plugin: 'java'
+
+sourceCompatibility = 1.8
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    compile 'com.sparkjava:spark-core:2.6.0'
+    compile 'org.mongodb:mongodb-driver:3.5.0'
+    compile 'com.sparkjava:spark-template-freemarker:2.7.1'
+
+    compile 'org.slf4j:slf4j-nop:1.7.13'
+
+    testCompile 'junit:junit:4.12'
+}
